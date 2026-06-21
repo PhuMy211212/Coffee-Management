@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+.signup-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 24px;
+  background:
+    linear-gradient(rgba(70, 28, 10, 0.18), rgba(70, 28, 10, 0.18)),
+    url("https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1600&q=80")
+      center / cover no-repeat;
+}
+
+.signup-card {
+  width: 390px;
+  max-width: 100%;
+  padding: 50px 55px 38px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.74);
+}
+
+.signup-card h1 {
+  margin: 0 0 18px;
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.signup-card h2 {
+  margin: 0 0 18px;
+  color: #9e2b21;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 13px;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  width: 16px;
+  color: #8d95a2;
+  font-size: 12px;
+  line-height: 1;
+  transform: translateY(-50%);
+}
+
+.input-group input {
+  width: 100%;
+  height: 28px;
+  border: none;
+  border-radius: 2px;
+  padding: 0 12px 0 34px;
+  color: #f3f4f6;
+  background: rgba(35, 43, 54, 0.95);
+  font-size: 11px;
+  outline: none;
+}
+
+.input-group input::placeholder {
+  color: #b7bdc8;
+}
+
+.input-group input:focus {
+  box-shadow: 0 0 0 2px rgba(158, 43, 33, 0.65);
+}
+
+button {
+  width: 100%;
+  height: 33px;
+  margin-top: 16px;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  background: #982419;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #b22c20;
+}
+
+.login-text {
+  margin: 16px 0 0;
+  font-size: 11px;
+}
+
+.login-text a {
+  color: #7596e8;
+  text-decoration: underline;
+}
+
+@media (max-width: 520px) {
+  .signup-page {
+    padding: 18px;
+  }
+
+  .signup-card {
+    padding: 42px 28px 32px;
+  }
+}
